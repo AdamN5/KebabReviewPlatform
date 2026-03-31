@@ -1,4 +1,9 @@
 package ie.atu.kebabreviewplatform.repository;
 
-public class ReviewRepo {
+import ie.atu.kebabreviewplatform.model.KebabReview;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface ReviewRepo extends JpaRepository<KebabReview, Long> {
 }
